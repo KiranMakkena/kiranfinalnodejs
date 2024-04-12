@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('/images/pexels-cottonbro-studio-4065876.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      width: 100px;
+    }
+    nav {
+      margin-right: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 150px auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .highlight {
+      text-align: center;
+      color: #007bff;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/images/Untitled-design copy.jpg" alt="Logo" class="logo"> <!-- Replace 'your-logo.png' with the path to your logo image -->
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About Us</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Dashboard</h1>
+    <% if (typeof user != 'undefined') { %>
+      <p>Welcome <%= user.name %>, Thank's for choseing my website </p>
+        
+        <p>If you wanna log out click here</p>
+      <a href="/users/logout">Logout</a>
+    <% } else { %>
+      
+    <% } %>
+    <p class="highlight">Actually, I'm working on this website. Stay tuned for updates!</p>
+  </div>
+</body>
+</html>

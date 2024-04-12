@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('/images/pexels-realtoughcandycom-11035380.jpg'); 
+      background-size: cover; /* Ensure background image covers the entire body */
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh; /* Set the body height to the full viewport height */
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+      color: #333; /* Dark text color */
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      width: 80px; /* Adjust logo width */
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333; /* Dark text color */
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 150px auto;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333; /* Dark text color */
+    }
+
+    .welcome-message {
+      text-align: center;
+      margin-top: 20px;
+      color: #333; /* Dark text color */
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button-container p {
+      margin-bottom: 10px;
+    }
+
+    .button-container a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #007bff; /* Blue button color */
+      color: #fff; /* White button text color */
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .button-container a:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/Untitled-design copy.jpg" alt="Logo"> <!-- Replace 'logo.jpg' with your logo file path -->
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Welcome to our Website!</h1>
+    <div class="welcome-message">
+      <p>Are you ready to explore?</p>
+    </div>
+    <div class="button-container">
+      <p>If you already have an account, click on <a href="/users/login">Login</a>.</p>
+      <p>If you're a new user, click on <a href="/users/register">Register</a> to create an account.</p>
+    </div>
+  </div>
+</body>
+</html>
